@@ -3,3 +3,4 @@ Way to go...
 Started with Visual Studio Code
 Added Line on windows Machine
 Line in Linux added
+merge conflicts
