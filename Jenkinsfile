@@ -19,7 +19,7 @@ pipeline {
             }
         }
 	stage("publish to s3") {
-            step([
+            steps([
                 $class: 'S3BucketPublisher',
                 entries: [[
                     sourceFile: 'tomcatwebapp',
