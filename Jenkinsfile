@@ -13,9 +13,28 @@ pipeline {
             post {
                 success {
                     echo 'Now Archiving...'
-                    archiveArtifacts artifacts: '**/target/*.war'
+
+
                 }
             }
         }
+	stage("publish to s3") {
+            step([
+                $class: 'S3BucketPublisher',
+                entries: [[
+                    sourceFile: 'tomcatwebapp',
+                    bucket: 'pawan979797',
+                    selectedRegion: 'eu-east-1',
+                    noUploadOnFailure: true,
+                    managedArtifacts: true,
+                    flatten: true,
+                    showDirectlyInBrowser: true,
+                    keepForever: true,
+                ]],
+                profileName: 'myprofile',
+                dontWaitForConcurrentBuildCompletion: false, 
+            ])
+        }
+		
     }
 }
