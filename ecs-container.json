@@ -12,14 +12,12 @@
       ],
  
       "cpu": 128,
-      "mountPoints": [],
       "memory": 128,
-      "volumesFrom": [],
       "image": "428600689175.dkr.ecr.us-east-1.amazonaws.com/docker-ecs:v_27",
     }
   ],
-  "placementConstraints": [],
-  "memory": "300",
+
+  "memory": 300,
   "compatibilities": [
     "EC2"
   ],
@@ -31,13 +29,12 @@
       "name": "com.amazonaws.ecs.capability.ecr-auth"
     }
   ],
-  "pidMode": null,
+  
   "requiresCompatibilities": [
     "EC2"
   ],
   "networkMode": "bridge",
-  "cpu": "256",
+  "cpu": 256,
   "revision": 6,
   "status": "ACTIVE",
-  "volumes": []
 }
