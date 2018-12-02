@@ -11,23 +11,6 @@
 		"cpu": 128,
 		"memory": 128,
 		"image": "428600689175.dkr.ecr.us-east-1.amazonaws.com/docker-ecs:v_27"
-	}],
+	}]
 
-	"memory": 300,
-	"compatibilities": [
-		"EC2"
-	],
-	"taskDefinitionArn": "arn:aws:ecs:us-east-1:428600689175:task-definition/ecs-task-defination1:6",
-	"requiresAttributes": [{
-
-		"name": "com.amazonaws.ecs.capability.ecr-auth"
-	}],
-
-	"requiresCompatibilities": [
-		"EC2"
-	],
-	"networkMode": "bridge",
-	"cpu": 256,
-	"revision": 6,
-	"status": "ACTIVE"
 }
