@@ -13,7 +13,7 @@
  
       "cpu": 128,
       "memory": 128,
-      "image": "428600689175.dkr.ecr.us-east-1.amazonaws.com/docker-ecs:v_27",
+      "image": "428600689175.dkr.ecr.us-east-1.amazonaws.com/docker-ecs:v_27"
     }
   ],
 
