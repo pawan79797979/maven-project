@@ -1,7 +1,7 @@
 {
 	"family": "ecs-task-defination1",
 	"containerDefinitions": [{
-		"name": "ecs-service%BUILD_NUMBER%",
+		"name": "ecs-container27",
 		"portMappings": [{
 			"hostPort": 9090,
 			"protocol": "tcp",
