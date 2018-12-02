@@ -3,7 +3,7 @@
 	"containerDefinitions": [{
 		"name": "ecs-container27",
 		"portMappings": [{
-			"hostPort": 9090,
+			"hostPort": 9696,
 			"protocol": "tcp",
 			"containerPort": 8080
 		}],
