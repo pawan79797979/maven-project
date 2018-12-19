@@ -14,7 +14,7 @@ pipeline {
                 success {
                     withDockerRegistry([ credentialsId: "dockerhub", url: "" ]) {
                     sh 'docker push dockerhopper/app1:latest'
-                    sh 'ansible-playbook /etc/ansible/playbooks/credapp1.yml'
+                    sudo sh 'ansible-playbook /etc/ansible/playbooks/credapp1.yml'
                 }
             }
         }
