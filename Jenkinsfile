@@ -12,7 +12,7 @@ pipeline {
             }
             post {
                 success {
-                    withDockerRegistry([ credentialsId: "dockerbub", url: "" ]) {
+                    withDockerRegistry([ credentialsId: "dockerhub", url: "" ]) {
                     sh 'docker push dockerhopper/app1:latest'
                 }
             }
